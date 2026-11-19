@@ -1,0 +1,50 @@
+/* =========================================
+   ESTILOS PERSONALIZADOS - APP04
+   ========================================= */
+
+/* Estilos generales para todas las páginas */
+body {
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+/* Efecto Faded a negro en la parte inferior */
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0,0,0, 1) 0%, rgba(0,0,0, 0) 100%);
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* --- COLORES PARA LOS FONDOS --- */
+
+/* Azul (Calculadora Básica) */
+.bg-gradient-primary {
+    background: linear-gradient(180deg, rgba(13, 110, 253, 0.15) 0%, rgba(33, 37, 41, 1) 40%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+/* Amarillo (Calculadora Científica) */
+.bg-gradient-warning {
+    background: linear-gradient(180deg, rgba(255, 193, 7, 0.15) 0%, rgba(33, 37, 41, 1) 40%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+/* Cian (Mayoría de Edad) */
+.bg-gradient-info {
+    background: linear-gradient(180deg, rgba(13, 202, 240, 0.15) 0%, rgba(33, 37, 41, 1) 40%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+/* Naranja (Números) */
+.bg-gradient-orange {
+    background: linear-gradient(180deg, rgba(253, 126, 20, 0.15) 0%, rgba(33, 37, 41, 1) 40%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+/* Verde (Cambio de Contraseña) */
+.bg-gradient-success {
+    background: linear-gradient(180deg, rgba(25, 135, 84, 0.15) 0%, rgba(33, 37, 41, 1) 40%, rgba(0, 0, 0, 1) 100%) !important;
+}
