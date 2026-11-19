@@ -10,11 +10,13 @@
         <div class="container">
             <a class="navbar-brand text-white fw-bold" href="../index.html">Ejercicios IAW</a>
             <div class="navbar-nav">
+                <div class="navbar-nav me-auto">
                 <a class="nav-link text-light" href="calculadora_basica.php">1. Calculadora</a>
                 <a class="nav-link text-light" href="calculadora_cientifica.php">2. Científica</a>
                 <a class="nav-link text-light" href="mayoria_edad.php">3. Edad</a>
                 <a class="nav-link text-light" href="numeros.php">4. Números</a>
             </div>
+            <?php include("../PHP/includes/hearder.php"); ?>
         </div>
     </nav>
 
