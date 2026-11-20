@@ -1,0 +1,4 @@
+[2026-11-20 12:48:14] [IP: 127.0.0.1] [Usuario: admin] Cierre de sesión
+[2026-11-20 12:48:29] [IP: 127.0.0.1] [Usuario: juan] Inicio de sesión correcto
+[2026-11-20 12:48:32] [IP: 127.0.0.1] [Usuario: juan] Cierre de sesión
+[2026-11-20 12:48:38] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto

@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION["usuario"]) || $_SESSION["usuario"] !== "admin") {
+    header("Location: mayoria_edad.php");
+    exit();
+}
 include("../PHP/includes/hearder.php");
 ?>
 <!DOCTYPE html>
@@ -11,15 +16,18 @@ include("../PHP/includes/hearder.php");
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-black border-bottom border-secondary mb-4">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="../index.html">Ejercicios IAW</a>
-            <div class="navbar-nav">
+            <a class="navbar-brand text-white fw-bold" href="../index.php">Ejercicios IAW</a>
+            <div class="navbar-nav me-auto">
                 <a class="nav-link text-light" href="calculadora_basica.php">1. Calculadora</a>
                 <a class="nav-link text-light" href="calculadora_cientifica.php">2. Científica</a>
                 <a class="nav-link text-light" href="mayoria_edad.php">3. Edad</a>
                 <a class="nav-link text-light" href="numeros.php">4. Números</a>
+                <a class="nav-link text-info fw-bold" href="cambio_password.php">5. Contraseña</a>
             </div>
+            <?php include("../PHP/includes/hearder.php"); ?>
         </div>
     </nav>
+
     <div class="container mt-4">
         <h1>1. Calculadora Básica</h1>
         <div id="resultado" class="alert alert-info mt-3" style="display: none;"></div>
@@ -40,8 +48,8 @@ include("../PHP/includes/hearder.php");
     </div>
 
     <script>
-        document.getElementById("formulario").onsubmit = function(evento) 
-            {
+        document.getElementById("formulario").onsubmit = function(evento)
+        {
             evento.preventDefault();
             var num1 = document.getElementById("num1").value;
             var num2 = document.getElementById("num2").value;
@@ -49,23 +57,23 @@ include("../PHP/includes/hearder.php");
             var peticion = new XMLHttpRequest();
             peticion.open("POST", "../PHP/ej1_calc.php", true);
             peticion.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            
-            peticion.onload = function() 
-                {
+
+            peticion.onload = function()
+            {
                 var caja = document.getElementById("resultado");
                 caja.style.display = "block";
                 caja.innerHTML = peticion.responseText;
-                if(peticion.responseText.indexOf("Error") !== -1) 
-                    {
+                if(peticion.responseText.indexOf("Error") !== -1)
+                {
                     caja.className = "alert alert-danger mt-3";
-                    } 
-                    else 
-                        {
-                        caja.className = "alert alert-info mt-3";
-                        }
-                };
-                peticion.send("num1=" + num1 + "&num2=" + num2);
+                }
+                else
+                {
+                    caja.className = "alert alert-info mt-3";
+                }
             };
+            peticion.send("num1=" + num1 + "&num2=" + num2);
+        };
     </script>
 </body>
 </html>
