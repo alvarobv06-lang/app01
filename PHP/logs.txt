@@ -2,3 +2,24 @@
 [2026-11-20 12:48:29] [IP: 127.0.0.1] [Usuario: juan] Inicio de sesión correcto
 [2026-11-20 12:48:32] [IP: 127.0.0.1] [Usuario: juan] Cierre de sesión
 [2026-11-20 12:48:38] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto
+[2026-11-20 16:37:35] [IP: 127.0.0.1] [Usuario: Invitado] Cierre de sesión
+[2026-11-20 16:46:49] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto
+[2026-11-20 16:53:39] [IP: 127.0.0.1] [Usuario: admin] Cierre de sesión
+[2026-11-20 16:54:36] [IP: 127.0.0.1] [Usuario: juan] Inicio de sesión correcto
+[2026-11-20 16:54:53] [IP: 127.0.0.1] [Usuario: juan] Cierre de sesión
+[2026-11-20 16:55:00] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto
+[2026-11-20 17:07:09] [IP: 127.0.0.1] [Usuario: admin] Cierre de sesión
+[2026-11-20 17:07:17] [IP: 127.0.0.1] [Usuario: juan] Inicio de sesión correcto
+[2026-11-20 17:07:46] [IP: 127.0.0.1] [Usuario: juan] Cierre de sesión
+[2026-11-20 17:11:48] [IP: 127.0.0.1] [Usuario: juan] Inicio de sesión correcto
+[2026-11-20 17:23:08] [IP: 127.0.0.1] [Usuario: juan] Cierre de sesión
+[2026-11-20 17:23:15] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto
+[2026-11-20 17:23:52] [IP: 127.0.0.1] [Usuario: admin] Cierre de sesión
+[2026-11-20 17:24:36] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto
+[2026-11-20 17:32:12] [IP: 127.0.0.1] [Usuario: admin] Cierre de sesión
+[2026-11-20 17:32:19] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto
+[2026-11-21 10:17:28] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto
+[2026-11-21 10:22:43] [IP: 127.0.0.1] [Usuario: admin] Cierre de sesión
+[2026-11-21 10:22:53] [IP: 127.0.0.1] [Usuario: juan] Inicio de sesión correcto
+[2026-11-21 10:23:32] [IP: 127.0.0.1] [Usuario: juan] Cierre de sesión
+[2026-11-21 10:24:27] [IP: 127.0.0.1] [Usuario: admin] Inicio de sesión correcto

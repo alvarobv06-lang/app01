@@ -36,9 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 <body class="bg-dark d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="card p-4 shadow" style="width: 350px;">
+    <div class="card bg-black border-secondary card-glow card-enter p-4 shadow" style="width: 350px;">
         <h2 class="text-center mb-4">Iniciar sesión</h2>
         <?php if ($error !== ""): ?>
             <div class="alert alert-danger py-2"><?php echo htmlspecialchars($error); ?></div>
@@ -52,12 +53,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label class="form-label">Contraseña:</label>
                 <input type="password" name="password" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            <button type="submit" class="btn btn-primary btn-anim w-100">Entrar</button>
         </form>
 
         <hr class="my-3 border-secondary">
 
-        <a href="mayoria_edad.php" class="btn btn-outline-light w-100">Continuar como invitado</a>
+        <a href="mayoria_edad.php" class="btn btn-outline-light btn-anim btn-hover-info w-100">Continuar como invitado</a>
     </div>
 </body>
 </html>

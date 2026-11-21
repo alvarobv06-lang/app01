@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Solo admin puede ver los logs
 if (!isset($_SESSION['usuario']) || $_SESSION['usuario'] !== 'admin') {
     if (isset($_SESSION['usuario']) && $_SESSION['usuario'] === 'juan') {
         header("Location: ../pags/mayoria_edad.php");
@@ -17,18 +16,18 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'] !== 'admin') {
     <meta charset="UTF-8">
     <title>Registro de Operaciones (Log)</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 <body class="bg-dark">
-    <!-- NAVEGACIÓN ADAPTADA PARA LA CARPETA PHP -->
     <nav class="navbar navbar-expand-lg bg-black border-bottom border-secondary mb-4">
         <div class="container">
             <a class="navbar-brand text-white fw-bold" href="../index.php">Ejercicios IAW</a>
             <div class="navbar-nav me-auto">
-                <a class="nav-link text-light" href="../pags/calculadora_basica.php">1. Calculadora</a>
-                <a class="nav-link text-light" href="../pags/calculadora_cientifica.php">2. Científica</a>
-                <a class="nav-link text-light" href="../pags/mayoria_edad.php">3. Edad</a>
-                <a class="nav-link text-light" href="../pags/numeros.php">4. Números</a>
-                <a class="nav-link text-info fw-bold" href="../pags/cambio_password.php">5. Contraseña</a>
+                <a class="nav-link nav-link-glow nav-link-primary" href="../pags/calculadora_basica.php">1. Calculadora</a>
+                <a class="nav-link nav-link-glow nav-link-warning" href="../pags/calculadora_cientifica.php">2. Científica</a>
+                <a class="nav-link nav-link-glow nav-link-info" href="../pags/mayoria_edad.php">3. Edad</a>
+                <a class="nav-link nav-link-glow nav-link-orange" href="../pags/numeros.php">4. Números</a>
+                <a class="nav-link nav-link-glow nav-link-success" href="../pags/cambio_password.php">5. Contraseña</a>
             </div>
             <?php include(__DIR__ . "/includes/hearder.php"); ?>
         </div>
@@ -38,7 +37,7 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'] !== 'admin') {
         <h1>Registro de Logs</h1>
         <p class="text-secondary">Bienvenido, Administrador.</p>
 
-        <div class="card bg-black border-secondary mt-4">
+        <div class="card bg-black border-warning card-glow card-enter mt-4">
             <div class="card-body">
                 <pre class="text-success" style="max-height: 500px; overflow-y: auto;">
 <?php
